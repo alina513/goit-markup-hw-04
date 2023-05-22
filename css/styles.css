@@ -4,7 +4,7 @@
 
   --primary-background: #ffffff;
   --secondary-background: #f4f4fd;
-  --footer-hero-background: #2e2f42;
+  --footer-hero-background: #d9d9d9;
 
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
@@ -150,7 +150,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
 
-  color: var(--primary-text-color);
+  color: #8e8f99;
 }
 
 .contact-mail {
@@ -182,9 +182,22 @@ body {
 /* Hero */
 .hero {
   background-color: var(--footer-hero-background);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero.jpg");
+  background-size: cover;
+  max-width: 1440px;
+  height: 600px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 180px;
+  padding-left: 180px;
 }
+
 .main-title {
   font-weight: 700;
   font-size: 56px;
@@ -228,6 +241,9 @@ body {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--button-color-hover);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* About us */
@@ -253,7 +269,28 @@ body {
 }
 
 .list-item-aboutus {
-  flex-basis: calc((100%-72px)/4);
+  flex-basis: calc((100%-72px) / 4);
+}
+
+.box-icon-aboutus {
+  width: 264px;
+  height: 112p[];
+  background-color: var(--secondary-background);
+
+  margin-bottom: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-aboutus {
+  fill: var(--secondary-text-color);
+  width: 64px;
+  height: 64px;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* What are we doing  */
@@ -284,6 +321,8 @@ body {
   flex-basis: calc(100%-72px / 4);
 
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-title {
@@ -315,6 +354,67 @@ body {
 .team-container-description {
   padding: 32px 16px;
 }
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--button-color);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  margin-top: 8px;
+}
+
+.social-icon {
+  fill: var(--primary-text-color-theme-dark);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* Clients */
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 168px;
+  height: 88px;
+  background-color: #ffffff;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.clients-icon {
+  fill: #8e8f99;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid #404bbf;
+}
+
+.clients-link:hover .clients-icon:hover,
+.clients-link:focus .clients-icon:focus {
+  fill: #404bbf;
+}
+
 /* Footer */
 
 .page-footer {
@@ -353,6 +453,42 @@ body {
   width: 264px;
 }
 
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--secondary-text-color-theme-dark);
+}
+
+.footer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--button-color);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-icon-list {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.social-footer {
+  margin-left: 120px;
+}
+
 /* Portfolio */
 
 .portfolio-page-list-title {
@@ -380,7 +516,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
 
-  
   text-align: center;
   letter-spacing: 0.04em;
   display: flex;
@@ -401,6 +536,9 @@ body {
   color: var(--primary-text-color-theme-dark);
 
   border: 1px solid transparent;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .filters-btn:not(:last-child) {
@@ -435,6 +573,11 @@ body {
   flex-basis: calc(100%- 48 / 3);
 }
 
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-padding {
   padding-top: 96px;
 }
@@ -445,3 +588,4 @@ body {
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
 }
+
