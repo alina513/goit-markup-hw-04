@@ -4,7 +4,8 @@
 
   --primary-background: #ffffff;
   --secondary-background: #f4f4fd;
-  --footer-hero-background: #d9d9d9;
+  --hero-background: #d9d9d9;
+  --footer-background: #2e2f42;
 
   --primary-text-color: #434455;
   --secondary-text-color: #2e2f42;
@@ -184,7 +185,7 @@ body {
 
 /* Hero */
 .hero {
-  background-color: var(--footer-hero-background);
+  background-color: var(--hero-background);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -416,7 +417,7 @@ body {
 /* Footer */
 
 .page-footer {
-  background-color: var(--footer-hero-background);
+  background-color: var(--footer-background);
   padding-top: 100px;
   padding-bottom: 100px;
 }
